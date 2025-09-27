@@ -4,7 +4,7 @@ config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
 # Font
 font-family = "MesloLGS Nerd Font"
 font-style = Regular
-font-size = 14
+font-size = 12
 
 # Window
 window-padding-x = 0
@@ -17,9 +17,8 @@ cursor-style = "block"
 
 # Keyboard bindings
 keybind = f11=toggle_fullscreen
-keybind = ctrl+backspace=text:\x1b\x7f
-keybind=ctrl+delete=text:\x1b[3;5~
+keybind = ctrl+backspace=text:\x17
+keybind= ctrl+delete=text:\x1b[3;5~
 keybind = ctrl+shift+c=copy_to_clipboard
 keybind = ctrl+v=paste_from_clipboard
 keybind = shift+insert=paste_from_selection
-
