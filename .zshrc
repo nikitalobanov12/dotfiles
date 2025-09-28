@@ -52,4 +52,5 @@ alias vim='nvim'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 
+
 . "$HOME/.local/share/../bin/env"
