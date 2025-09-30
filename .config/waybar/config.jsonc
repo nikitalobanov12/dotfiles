@@ -11,6 +11,7 @@
     "hyprland/window",
   ],
   "modules-right": [
+    "mpris",
     "group/tray-expander",
     "bluetooth",
     "network",
@@ -63,10 +64,9 @@
     "on-click": "$TERMINAL -e btop",
   },
   "clock": {
-    "format": "{:L%A %B %d %I:%M %p}",
-    // "format-alt": "{:L%d %B W%V %Y}",
-    "tooltip": false,
+    "format": "{:%a %b %d, %I:%M %p}",
     "on-click-right": "omarchy-cmd-tzupdate",
+    "interval": 1,
   },
   "network": {
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -136,12 +136,28 @@
     "signal": 8,
     "return-type": "json",
   },
+
   "hyprland/window": {
     "format": "{title}",
-    "max-length": 60,
-    "seperate-outputs": true,
+    "format-alt": "{class}",
+    "max-length": 70,
+    "ellipsis": true,
+    "separate-outputs": true,
     "icon": false,
     "expand": true,
+    "escape": true,
+    "tooltip": false,
+  },
+
+  "mpris": {
+    "player": "spotify",
+    "format": "🎧 {artist} — {title}   ",
+    "format-paused": "⏸  {artist} — {title}   ",
+    "max-length": 60,
+    "tooltip": false,
+    "on-click": "playerctl -p spotify play-pause",
+    "on-scroll-up": "playerctl -p spotify next",
+    "on-scroll-down": "playerctl -p spotify previous",
   },
   "tray": {
     "icon-size": 12,
