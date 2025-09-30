@@ -48,12 +48,9 @@ export VISUAL=nvim
 alias reload='source ~/.zshrc'
 alias vim='nvim'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias thx='exit'
 alias c='clear'
 alias rr='yazi'
-
-
-
+alias q='exit'
 
 . "$HOME/.local/share/../bin/env"
 
