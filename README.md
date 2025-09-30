@@ -1,4 +1,1 @@
-# dotfiles
-
-wip
-
+I update these way too much
