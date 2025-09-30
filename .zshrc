@@ -10,8 +10,6 @@ source "$ZSH/oh-my-zsh.sh"
 # ========================
 # Appearance and colors
 # ========================
-export TERM="xterm-256color"
-if [[ -n "$TMUX" ]]; then export TERM="screen-256color"; fi
 ENABLE_CORRECTION="true"
 
 # Gruvbox syntax highlighting
