@@ -4,7 +4,7 @@
   "position": "top",
   "spacing": 0,
   "height": 20,
-  "modules-left": ["custom/omarchy", "hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces"],
   "modules-center": [
     "custom/update",
     "custom/screenrecording-indicator",
@@ -16,7 +16,6 @@
     "bluetooth",
     "network",
     "pulseaudio",
-    "cpu",
     "battery",
     "clock",
   ],
@@ -44,11 +43,6 @@
       "5": [],
     },
   },
-  "custom/omarchy": {
-    "format": "<span font='omarchy'>\ue900</span>",
-    "on-click": "omarchy-menu",
-    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space",
-  },
   "custom/update": {
     "format": "",
     "exec": "omarchy-update-available",
@@ -58,11 +52,6 @@
     "interval": 3600,
   },
 
-  "cpu": {
-    "interval": 5,
-    "format": "󰍛",
-    "on-click": "$TERMINAL -e btop",
-  },
   "clock": {
     "format": "{:%a %b %d, %I:%M %p}",
     "on-click-right": "omarchy-cmd-tzupdate",
@@ -118,18 +107,6 @@
       "default": ["", "", ""],
     },
   },
-  "group/tray-expander": {
-    "orientation": "inherit",
-    "drawer": {
-      "transition-duration": 600,
-      "children-class": "tray-group-item",
-    },
-    "modules": ["custom/expand-icon", "tray"],
-  },
-  "custom/expand-icon": {
-    "format": " ",
-    "tooltip": false,
-  },
   "custom/screenrecording-indicator": {
     "on-click": "omarchy-cmd-screenrecord",
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
@@ -151,8 +128,8 @@
 
   "mpris": {
     "player": "spotify",
-    "format": "🎧 {artist} — {title}   ",
-    "format-paused": "⏸  {artist} — {title}   ",
+    "format": "🎧 {artist} — {title}",
+    "format-paused": "⏸  {artist} — {title}",
     "max-length": 60,
     "tooltip": false,
     "on-click": "playerctl -p spotify play-pause",

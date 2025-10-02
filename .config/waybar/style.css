@@ -7,16 +7,16 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: 'MesloLGS Nerd Font';
+  font-family: "MesloLGS Nerd Font";
   font-size: 12px;
 }
 
 .modules-left {
-  margin-left: 8px;
+  /* margin-left: 4px; */
 }
 
 .modules-right {
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 #workspaces button {
@@ -27,7 +27,7 @@
 }
 
 #workspaces button.empty {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 #tray,
@@ -38,6 +38,8 @@
 #pulseaudio,
 #custom-omarchy,
 #custom-screenrecording-indicator,
+#mpris,
+#clock,
 #custom-update {
   min-width: 12px;
   margin: 0 7.5px;
@@ -56,7 +58,7 @@ tooltip {
 }
 
 #clock {
-  margin-left: 8.75px;
+  /* margin-left: 8.75px; */
 }
 
 .hidden {
@@ -71,4 +73,9 @@ tooltip {
 
 #custom-screenrecording-indicator.active {
   color: #a55555;
+}
+
+#custom-pomodoro {
+  min-width: 12px;
+  margin: 0 7.5px;
 }
