@@ -8,7 +8,7 @@ return {
 					auto_brackets = { enabled = true },
 				},
 				menu = { auto_show = true },
-				ghost_text = { enabled = true },
+				ghost_text = { enabled = false },
 			},
 			snippet = {
 				expand = function(snippet) end,
