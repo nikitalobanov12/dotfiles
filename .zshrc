@@ -51,6 +51,7 @@ alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias c='clear'
 alias rr='yazi'
 alias q='exit'
+alias neocat='cd NeoCat && bash ./neocat.sh --shell'
 
 . "$HOME/.local/share/../bin/env"
 
