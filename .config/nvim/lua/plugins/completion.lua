@@ -5,7 +5,7 @@ return {
 		opts = {
 			completion = {
 				accept = {
-					auto_brackets = { enabled = true },
+					auto_brackets = { enabled = false },
 				},
 				menu = { auto_show = true },
 				ghost_text = { enabled = false },
@@ -18,7 +18,7 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		opts = {
-			inlay_hints = { enabled = true },
+			inlay_hints = { enabled = false },
 		},
 	},
 }

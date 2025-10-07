@@ -1,0 +1,28 @@
+general.import = [ "~/.config/omarchy/current/theme/alacritty.toml" ]
+
+
+[font]
+normal = { family = "MesloLGS Nerd Font" }
+bold = { family = "MesloLGS Nerd Font" }
+italic = { family = "MesloLGS Nerd Font" }
+size = 13
+
+[window]
+padding.x = 0
+padding.y = 0
+decorations = "None"
+
+[keyboard]
+bindings = [
+{ key = "F11", action = "ToggleFullscreen" },
+#save_to_clipboard
+ { key = "C", mods = "Control|Shift", action = "Copy" },
+  { key = "V", mods = "Control", action = "Paste" },
+
+  # Ctrl+Backspace delete previous word  sends Ctrl+W
+  { key = "Back", mods = "Control", chars = "\u0017" },
+
+  # Ctrl+Delete delete next word  sends Esc d
+  { key = "Delete", mods = "Control", chars = "\u001bd" },
+]
+

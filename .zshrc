@@ -61,4 +61,5 @@ export NVM_DIR="$HOME/.config/nvm"
 export PATH=$HOME/.local/bin:$PATH
 
 
+eval "$(zoxide init zsh)"
 
