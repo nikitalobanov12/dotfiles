@@ -1,2 +1,15 @@
 -- Plugins disabled in LazyVim
-return {}
+return {
+	{ "nvimdev/dashboard-nvim", enabled = false },
+	{ "folke/snacks.nvim", opts = {
+		scroll = {
+			enabled = false,
+		},
+	} },
+	-- {
+	-- 	"folke/sidekick.nvim",
+	-- 	opts = {
+	-- 		nes = false,
+	-- 	},
+	-- },
+}

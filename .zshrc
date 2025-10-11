@@ -4,7 +4,7 @@
 # ========================
 export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="typewritten"
-plugins=(tmux git aliases  docker zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(tmux git zsh-autosuggestions zsh-syntax-highlighting)
 source "$ZSH/oh-my-zsh.sh"
 
 # ========================
@@ -46,7 +46,7 @@ export EDITOR=nvim
 export VISUAL=nvim
 
 alias reload='source ~/.zshrc'
-alias vim='nvim'
+alias vi='nvim'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias c='clear'
 alias rr='yazi'
@@ -63,3 +63,11 @@ export PATH=$HOME/.local/bin:$PATH
 
 eval "$(zoxide init zsh)"
 
+
+# pnpm
+export PNPM_HOME="/home/nikita/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

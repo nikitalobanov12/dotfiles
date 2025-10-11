@@ -1,6 +1,14 @@
 local M = {
 	-- Colorschemes
 	{
+		"AlexvZyl/nordic.nvim",
+		lazy = false,
+		priority = 1000,
+		config = function()
+			-- require("nordic").load()
+		end,
+	},
+	{
 		"folke/tokyonight.nvim",
 		lazy = true,
 		opts = {
@@ -89,7 +97,7 @@ else
 	M[#M + 1] = {
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "tokyonight",
+			colorscheme = "gruvbox",
 		},
 	}
 end

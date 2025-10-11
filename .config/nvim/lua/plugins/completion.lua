@@ -5,14 +5,14 @@ return {
 		opts = {
 			completion = {
 				accept = {
-					auto_brackets = { enabled = false },
+					-- auto_brackets = { enabled = false },
 				},
-				menu = { auto_show = true },
+				-- menu = { auto_show = true },
 				ghost_text = { enabled = false },
 			},
-			snippet = {
-				expand = function(snippet) end,
-			},
+			-- snippet = {
+			-- expand = function(snippet) end,
+			-- },
 		},
 	},
 	{
