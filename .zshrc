@@ -47,9 +47,10 @@ export VISUAL=nvim
 
 alias reload='source ~/.zshrc'
 alias vi='nvim'
+alias v='nvim'
+alias vim='nvim'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias c='clear'
-alias rr='yazi'
 alias q='exit'
 alias neocat='cd NeoCat && bash ./neocat.sh --shell'
 
@@ -64,10 +65,17 @@ export PATH=$HOME/.local/bin:$PATH
 eval "$(zoxide init zsh)"
 
 
-# pnpm
 export PNPM_HOME="/home/nikita/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-# pnpm end
+
+
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}

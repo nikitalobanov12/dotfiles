@@ -6,10 +6,10 @@ return {
 			enabled = false,
 		},
 	} },
-	-- {
-	-- 	"folke/sidekick.nvim",
-	-- 	opts = {
-	-- 		nes = false,
-	-- 	},
-	-- },
+	{
+		"folke/sidekick.nvim",
+		opts = {
+			-- nes = { enabled = false },
+		},
+	},
 }
