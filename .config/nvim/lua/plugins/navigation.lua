@@ -8,6 +8,9 @@ return {
 		cmd = { "FFFFind", "FFFScan", "FFFRefreshGit" },
 		dependencies = { "nvim-tree/nvim-web-devicons" },
 		opts = {
+			filter = function(entry)
+				return not entry.path:match("/node_modules/")
+			end,
 			base_path = vim.fn.getcwd(),
 			prompt = "> ",
 			title = "",
