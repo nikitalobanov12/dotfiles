@@ -13,6 +13,7 @@
     "network",
     "pulseaudio",
     "battery",
+    "custom/timer",
     "clock",
   ],
   "hyprland/workspaces": {
@@ -46,6 +47,15 @@
     "tooltip-format": "Omarchy update available",
     "signal": 7,
     "interval": 3600,
+  },
+
+  "custom/timer": {
+    "exec": "~/.config/waybar/custom_modules/timer.py status",
+    "on-click": "~/.config/waybar/custom_modules/timer.py prompt",
+    "on-click-right": "~/.config/waybar/custom_modules/timer.py pause",
+    "on-click-middle": "~/.config/waybar/custom_modules/timer.py stop",
+    "return-type": "json",
+    "interval": 1,
   },
 
   "clock": {

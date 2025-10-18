@@ -40,7 +40,8 @@
 #custom-screenrecording-indicator,
 #mpris,
 #clock,
-#custom-update {
+#custom-update,
+#custom-timer {
   min-width: 12px;
   margin: 0 7.5px;
 }
@@ -78,4 +79,12 @@ tooltip {
 #custom-pomodoro {
   min-width: 12px;
   margin: 0 7.5px;
+}
+
+#custom-timer.timer.finished {
+  color: #fb4934;
+}
+
+#custom-timer.timer.paused {
+  color: #fabd2f;
 }
