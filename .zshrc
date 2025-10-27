@@ -52,6 +52,7 @@ alias vim='nvim'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias c='clear'
 alias q='exit'
+alias :q='exit'
 alias neocat='cd NeoCat && bash ./neocat.sh --shell'
 
 . "$HOME/.local/share/../bin/env"

@@ -6,12 +6,12 @@ return {
 				return vim.bo.filetype ~= "markdown"
 			end,
 			keymap = {
-				preset = 'default',
-				['<Tab>'] = { 'select_next', 'fallback' },
-				['<S-Tab>'] = { 'select_prev', 'fallback' },
+				preset = "default",
+				["<Tab>"] = { "select_next", "fallback" },
+				["<S-Tab>"] = { "select_prev", "fallback" },
 			},
 			-- completion = {
-			-- ghost_text = { enabled = true },
+			-- ghost_text = { enabled = false },
 			-- },
 		},
 	},
