@@ -4,8 +4,8 @@ config-file = ?"~/.config/omarchy/current/theme/ghostty.conf"
 # Font
 font-family = OMARCHY
 font-size = 12
-adjust-cell-height=5%
 
+adjust-cell-height=5%
 
 # Window
 window-padding-x = 0
