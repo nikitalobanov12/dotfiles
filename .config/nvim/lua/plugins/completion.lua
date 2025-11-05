@@ -7,7 +7,7 @@ return {
 			end,
 			keymap = {
 				preset = "default",
-				["<Tab>"] = { "select_next", "fallback" },
+				["<Tab>"] = { "accept", "fallback" },
 				["<S-Tab>"] = { "select_prev", "fallback" },
 			},
 			-- completion = {
