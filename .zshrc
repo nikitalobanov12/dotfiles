@@ -54,6 +54,7 @@ alias c='clear'
 alias q='exit'
 alias :q='exit'
 alias neocat='cd NeoCat && bash ./neocat.sh --shell'
+alias update='_ pacman -Syu && yay -Syu'
 
 . "$HOME/.local/share/../bin/env"
 

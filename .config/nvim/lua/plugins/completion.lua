@@ -7,8 +7,9 @@ return {
 			end,
 			keymap = {
 				preset = "default",
-				["<Tab>"] = { "accept", "fallback" },
+				["<Tab>"] = { "select_next", "fallback" },
 				["<S-Tab>"] = { "select_prev", "fallback" },
+				["<Enter>"] = { "accept", "fallback" },
 			},
 			-- completion = {
 			-- ghost_text = { enabled = false },
