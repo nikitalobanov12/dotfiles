@@ -4,7 +4,7 @@
 <a href="https://dotfyle.com/nikitalobanov12/dotfiles-config-nvim"><img src="https://dotfyle.com/nikitalobanov12/dotfiles-config-nvim/badges/leaderkey?style=flat" /></a>
 <a href="https://dotfyle.com/nikitalobanov12/dotfiles-config-nvim"><img src="https://dotfyle.com/nikitalobanov12/dotfiles-config-nvim/badges/plugin-manager?style=flat" /></a>
 
-This config uses lazyvim as the starting point, the /lua/ directory contains all my custom changes to it 
+This config uses lazyvim as the starting point, the ./lua/ directory contains all my custom changes to it 
 
 ## Install Instructions
 
