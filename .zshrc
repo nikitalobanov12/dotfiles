@@ -84,3 +84,4 @@ function y() {
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+export PATH="/home/nikita/.cache/.bun/bin:$PATH"
