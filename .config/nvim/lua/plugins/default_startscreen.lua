@@ -39,6 +39,13 @@ return {
 		"akinsho/bufferline.nvim",
 		lazy = false,
 		event = override_event,
+		opts = {
+			options = {
+				numbers = function(opts)
+					return string.format("%s", opts.ordinal)
+				end,
+			},
+		},
 	},
 	{ -- do not lazyload
 		"folke/noice.nvim",
