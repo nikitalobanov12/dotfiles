@@ -55,7 +55,19 @@ alias q='exit'
 alias :q='exit'
 alias neocat='cd NeoCat && bash ./neocat.sh --shell'
 alias update='_ pacman -Syu && yay -Syu'
+alias brightness="ddcutil -b 14 setvcp 10 "
+alias g++23='g++ -std=c++23 -Wall -Wextra'
 
+# Terminal-based Brightness Control
+bright() {
+    # If no arguments, show current brightness
+    if [ -z "$1" ]; then
+        ddcutil -b 14 getvcp 10
+    else
+        # Arguments can be: '50', '+ 10', or '- 10'
+        ddcutil -b 14 setvcp 10 "$@"
+    fi
+}
 . "$HOME/.local/share/../bin/env"
 
 export NVM_DIR="$HOME/.config/nvm"
@@ -85,3 +97,4 @@ function y() {
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
 export PATH="/home/nikita/.cache/.bun/bin:$PATH"
+export PATH="$HOME/.fly/bin:$PATH"
