@@ -96,5 +96,6 @@ function y() {
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/terraform terraform
+export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="/home/nikita/.cache/.bun/bin:$PATH"
 export PATH="$HOME/.fly/bin:$PATH"
