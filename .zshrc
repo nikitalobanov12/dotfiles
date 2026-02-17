@@ -49,6 +49,7 @@ alias reload='source ~/.zshrc'
 alias vi='nvim'
 alias v='nvim'
 alias vim='nvim'
+alias vins='nvim'
 alias config='git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias c='clear'
 alias q='exit'
@@ -57,6 +58,8 @@ alias neocat='cd NeoCat && bash ./neocat.sh --shell'
 alias update='_ pacman -Syu && yay -Syu'
 alias brightness="ddcutil -b 14 setvcp 10 "
 alias g++23='g++ -std=c++23 -Wall -Wextra'
+alias claw='openclaw dashboard'
+alias clawt='openclaw tui'
 
 # Terminal-based Brightness Control
 bright() {
@@ -99,3 +102,11 @@ complete -o nospace -C /usr/bin/terraform terraform
 export PATH="$PATH:$HOME/.dotnet/tools"
 export PATH="/home/nikita/.cache/.bun/bin:$PATH"
 export PATH="$HOME/.fly/bin:$PATH"
+
+# Auto-start OpenClaw browser if not running
+if ! pgrep -f "openclaw-browser" > /dev/null 2>&1; then
+    (openclaw browser start > /dev/null 2>&1 &)
+fi
+
+# OpenClaw Completion
+source "/home/nikita/.openclaw/completions/openclaw.zsh"
