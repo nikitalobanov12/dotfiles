@@ -2,9 +2,9 @@ general.import = [ "~/.config/omarchy/current/theme/alacritty.toml" ]
 
 
 [font]
-normal = { family = "GeistMono Nerd Font" }
-bold = { family = "GeistMono Nerd Font" }
-italic = { family = "GeistMono Nerd Font" }
+normal = { family = "GeistMono Nerd Font Mono" }
+bold = { family = "GeistMono Nerd Font Mono" }
+italic = { family = "GeistMono Nerd Font Mono" }
 size = 13
 
 [window]
@@ -28,3 +28,6 @@ bindings = [
   { key = "Delete", mods = "Control", chars = "\u001bd" },
 ]
 
+
+[terminal]
+osc52 = "CopyPaste"
