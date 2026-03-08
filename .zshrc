@@ -60,6 +60,8 @@ alias brightness="ddcutil -b 14 setvcp 10 "
 alias g++23='g++ -std=c++23 -Wall -Wextra'
 alias claw='openclaw dashboard'
 alias clawt='openclaw tui'
+alias macmini='TERM=xterm-256color ssh -o ConnectTimeout=8 -o ServerAliveInterval=15 -o ServerAliveCountMax=3 tim@100.99.22.38'
+alias macmini-safe='TERM=xterm-256color ssh -t -o ConnectTimeout=8 tim@100.99.22.38 /bin/zsh -f'
 
 # Terminal-based Brightness Control
 bright() {
