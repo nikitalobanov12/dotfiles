@@ -7,10 +7,6 @@
       "description": "Teaching assistant mode for helping students learn without giving full solutions.",
       "mode": "primary",
       "prompt": "{file:./prompts/learning-system-prompt.md}"
-    },
-    "marketing": {
-      "description": "Marketing specialist with skills for CRO, copywriting, SEO, analytics, email, paid ads, and growth.",
-      "prompt": "{file:./prompts/marketing-system-prompt.md}"
     }
   }
 }
