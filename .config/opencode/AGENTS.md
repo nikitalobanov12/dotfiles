@@ -1,0 +1,1 @@
+/home/nikita/.config/llm/AGENTS.md
