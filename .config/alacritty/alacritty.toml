@@ -17,6 +17,7 @@ bindings = [
 { key = "F11", action = "ToggleFullscreen" },
 { key = "Insert", mods = "Shift", action = "Paste" },
 { key = "Insert", mods = "Control", action = "Copy" },
+  { key = "Return", mods = "Shift", chars = "\u001B\r" },
 #save_to_clipboard
  { key = "C", mods = "Control|Shift", action = "Copy" },
   { key = "V", mods = "Control", action = "Paste" },

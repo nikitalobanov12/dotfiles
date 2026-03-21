@@ -25,3 +25,6 @@ mouse-scroll-multiplier = 0.95
 
 # Fix general slowness on hyprland (https://github.com/ghostty-org/ghostty/discussions/3224)
 async-backend = epoll
+
+# Keep notifications without asking the compositor to focus the window.
+bell-features = system,title,no-attention
